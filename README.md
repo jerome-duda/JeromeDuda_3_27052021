@@ -1,1 +1,3 @@
-# JeromeDuda_3_27052021
+# installation
+1. npm install
+1. npm run sass 
