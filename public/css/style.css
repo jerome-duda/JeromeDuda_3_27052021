@@ -1,5 +1,17 @@
 body {
+  color: #9356DC;
+  font-size: 10px;
+}
+
+.header {
   color: red;
+}
+.header--modified {
+  background-color: green;
+}
+
+a {
+  font-size: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
