@@ -1,0 +1,39 @@
+.footer{
+    display:flex;
+    flex-direction:column;
+    padding:1rem;
+    background-color:#353535;
+    .footer__title{
+        color:#fff;
+        font-family:Shrikhand;
+        font-size:1.2rem;
+        margin:0 0 1rem;
+    }
+    .footer__list{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+}
+.chip{
+    margin: 0.5rem 0;
+    color: #fff;
+    text-decoration: none;
+    :hover{
+        text-decoration: underline;
+    }
+    .chip__fas{
+        width: 1.2rem;
+        margin-right: 0.5rem;
+    }
+}
+.chip:first-child{
+    margin-top:0;
+}
+.chip:last-child{
+    margin-bottom: 0;
+}
+.footer-link{
+    color: #fff;
+    text-decoration: none;
+}

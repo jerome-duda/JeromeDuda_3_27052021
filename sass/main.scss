@@ -1,18 +1,8 @@
-$color-primary:#9356DC;
-$color-secondary:#FF79DA;
-$color-tertiary:#99E2D0;
-
-
-body{
-    color:$color-primary;
-    font-size: 10px;
-}
-.header{
-    color: red;
-    &--modified{
-        background-color: green;
-    }
-}
-a{
-    font-size: 20px;
-}
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./base/base";
+@import "./base/animations";
+@import "./layouts/header";
+@import "./layouts/footer";
+@import "./pages/homepage";
+@import "./pages/secondary-pages";
