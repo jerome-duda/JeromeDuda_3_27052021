@@ -6,12 +6,22 @@
     &--modified{
         background-color: $color-tertiary;
     }
-    .header__logo{
+    &__logo{
         font-family:Shrikhand;
         margin:0;
         text-align:center;
         display: flex;
        justify-content: center;
+    }
+    &__container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__arrow{
+        font-size: 1.8em;
+        padding-right: 1em;
+        color: black;
     }
 }
 .localisation{
@@ -19,8 +29,14 @@
     justify-content: center;
     align-items: center;
     background-color: #eaeaea;
+    height: 6em;
+    &__name{
+        font-size: 20px;
+        font-weight: bold;
+    }
     i {
         padding-right: 1em;
+        font-size: 20px;
     }
 }
 .description{
@@ -29,14 +45,21 @@
     align-items: center;
     background-color: #fafafa;
     text-align: center;
+    &__title{
+        font-size: 2.3em;
+    }
+    &__description{
+        font-size: 1.3em;
+    }
 }
 .btn--primary{
     border: 0;
     padding: .75rem 1.5rem;
     font-weight: 500;
-    font-size: 1.1rem;
+    font-size: 1.5em;
     border-radius: 100px;
     color: #fff;
     background-color:$color-primary;
     box-shadow: 0.25rem 0.25rem 10px rgb(0 0 0 / 25%);
+    text-decoration: none;
 }

@@ -13,12 +13,22 @@ body, html {
 .header--modified {
   background-color: #99E2D0;
 }
-.header .header__logo {
+.header__logo {
   font-family: Shrikhand;
   margin: 0;
   text-align: center;
   display: flex;
   justify-content: center;
+}
+.header__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__arrow {
+  font-size: 1.8em;
+  padding-right: 1em;
+  color: black;
 }
 
 .localisation {
@@ -26,9 +36,15 @@ body, html {
   justify-content: center;
   align-items: center;
   background-color: #eaeaea;
+  height: 6em;
+}
+.localisation__name {
+  font-size: 20px;
+  font-weight: bold;
 }
 .localisation i {
   padding-right: 1em;
+  font-size: 20px;
 }
 
 .description {
@@ -38,40 +54,54 @@ body, html {
   background-color: #fafafa;
   text-align: center;
 }
+.description__title {
+  font-size: 2.3em;
+}
+.description__description {
+  font-size: 1.3em;
+}
 
 .btn--primary {
   border: 0;
   padding: 0.75rem 1.5rem;
   font-weight: 500;
-  font-size: 1.1rem;
+  font-size: 1.5em;
   border-radius: 100px;
   color: #fff;
   background-color: #9356DC;
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+  text-decoration: none;
 }
 
 .footer {
   display: flex;
   flex-direction: column;
-  padding: 1rem;
+  padding: 1.4em;
   background-color: #353535;
 }
-.footer .footer__title {
+.footer__title {
   color: #fff;
   font-family: Shrikhand;
   font-size: 1.2rem;
   margin: 0 0 1rem;
 }
-.footer .footer__list {
+.footer__list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
+.footer__logo {
+  color: #fff;
+  font-family: Shrikhand, "cursive";
+  font-size: 1.2rem;
+  margin: 0 0 1rem;
+}
 
 .chip {
-  margin: 0.5rem 0;
+  margin: 0.8rem 0;
   color: #fff;
   text-decoration: none;
+  font-size: 1.2em;
 }
 .chip :hover {
   text-decoration: underline;
@@ -106,16 +136,16 @@ body, html {
   position: relative;
   padding-left: 1em;
 }
-.fonction .fonction__title {
+.fonction__title {
   display: block;
-  font-size: 1.5em;
+  font-size: 2em;
   margin-block-start: 0.8em;
   margin-block-end: 0.8em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   font-weight: bold;
 }
-.fonction .fonction__tuto {
+.fonction__tuto {
   display: block;
   list-style-type: decimal;
   margin-block-start: 1em;
@@ -136,6 +166,7 @@ body, html {
   display: flex;
   position: relative;
   align-items: center;
+  height: 2.2em;
 }
 .container-fonction__number {
   display: flex;
@@ -143,19 +174,28 @@ body, html {
   align-items: center;
   width: 25px;
   height: 25px;
-  background-color: purple;
+  background-color: #9356DC;
   border-radius: 1em 1em;
   margin-left: -26px;
+  color: white;
+  font-size: 1.3em;
+}
+.container-fonction__description {
+  font-size: 1.4em;
 }
 
 .icon-fonction {
   padding: 1em;
+  font-size: 1.4em;
 }
 
 .restaurants {
   display: block;
   background-color: #f6f6f6;
   padding: 2rem 1rem;
+}
+.restaurants__title {
+  font-size: 2em;
 }
 
 .bloc-resto {
@@ -173,6 +213,9 @@ body, html {
   display: block;
   margin-bottom: 2em;
   height: 230px;
+}
+.container-restaurants a {
+  text-decoration: none;
 }
 
 .media-restaurants {
@@ -197,6 +240,25 @@ body, html {
 .description-restaurants {
   padding-left: 1em;
   position: relative;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+.description-restaurants__name {
+  font-size: 1.7em;
+  color: black;
+  font-weight: bold;
+}
+.description-restaurants__menu-city {
+  font-size: 1.3em;
+  color: black;
+}
+
+.restaurant-icon {
+  font-size: 3.2em;
+  padding-right: 0.6em;
+  color: black;
 }
 
 .secondary-page {
@@ -237,6 +299,7 @@ body, html {
   position: relative;
   padding-bottom: 0.5rem;
   font-weight: 400;
+  font-size: 1.5em;
 }
 .submenu__title::after {
   content: "";
@@ -250,7 +313,7 @@ body, html {
 
 .menu-item {
   background-color: #fff;
-  padding: 1rem;
+  padding: 0.5em 0.5em;
   display: flex;
   border-radius: 0.75rem;
   margin: 1rem 0;
@@ -259,10 +322,21 @@ body, html {
   cursor: pointer;
   max-width: 100%;
   height: 60px;
+  align-items: center;
+  align-content: space-between;
+  justify-content: space-between;
 }
 .menu-item__title {
   font-size: 1.3em;
 }
+.menu-item__description {
+  font-size: 1.2em;
+}
+.menu-item__price {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
 .wrap-btn {
   display: flex;
   flex-direction: column;
@@ -281,6 +355,7 @@ body, html {
   color: #fff;
   background-color: #9356DC;
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+  font-size: 1.8em;
 }
 
 /*# sourceMappingURL=style.css.map */
