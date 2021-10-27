@@ -146,7 +146,9 @@ body, html {
   font-weight: bold;
 }
 .fonction__tuto {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   list-style-type: decimal;
   margin-block-start: 1em;
   margin-block-end: 1em;
@@ -199,9 +201,11 @@ body, html {
 }
 
 .bloc-resto {
-  max-width: 1280px;
+  display: flex;
+  flex-wrap: wrap;
   margin: auto;
   position: relative;
+  justify-content: space-evenly;
 }
 
 .container-restaurants {
@@ -212,10 +216,32 @@ body, html {
   color: inherit;
   display: block;
   margin-bottom: 2em;
-  height: 230px;
+  padding-bottom: 15px;
+  min-width: 300px;
 }
 .container-restaurants a {
   text-decoration: none;
+}
+.container-restaurants .description-restaurants {
+  padding-left: 1em;
+  position: relative;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+.container-restaurants .description-restaurants .description-restaurants-text {
+  color: black;
+}
+.container-restaurants .description-restaurants .description-restaurants-text__name {
+  font-size: 1.7em;
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+.container-restaurants .description-restaurants .description-restaurants-text__city {
+  margin-top: 5px;
+  font-size: 1.3em;
 }
 
 .media-restaurants {
@@ -237,24 +263,6 @@ body, html {
   right: 0.75rem;
 }
 
-.description-restaurants {
-  padding-left: 1em;
-  position: relative;
-  display: flex;
-  align-content: center;
-  justify-content: space-between;
-  align-items: center;
-}
-.description-restaurants__name {
-  font-size: 1.7em;
-  color: black;
-  font-weight: bold;
-}
-.description-restaurants__menu-city {
-  font-size: 1.3em;
-  color: black;
-}
-
 .restaurant-icon {
   font-size: 3.2em;
   padding-right: 0.6em;
@@ -274,8 +282,10 @@ body, html {
   object-fit: cover;
 }
 
-.container, .menu {
-  display: block;
+.container-menu {
+  transform: translateY(-50px);
+  background-color: whitesmoke;
+  border-radius: 3em 3em 0 0;
 }
 
 .menu__header {
